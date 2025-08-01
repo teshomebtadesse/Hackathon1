@@ -1,118 +1,128 @@
 html{
-    height: 100%;
+    height: 100%; /*set the web page fit 100% zoom*/
 }
-body{
+body{                   /*the body attributes*/
     margin: 20px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
 
 }
-main{
+main{                 /*the main section in teh body */
     margin-left: 20px;
     margin-right: 20px;
 }
 
-h1{
-    background-color: rgb(223, 190, 149);
+h1{                             /*all first heading found everywhere will be attributted to have the following */
+    background-color: rgb(247, 247, 247);
     text-align: center;
-    color: green;
-    background-size: contain;
-    height: 50px;
+    color: rgb(5, 26, 255);
+    margin-top: 0%;
+    margin-bottom: 0%;
+  
 }
-.navbar ul{
+.navbar ul{             /*styling the lists in the menu bar (navivation bar)*/
     list-style-type: none;
-    background-color: rgb(190, 231, 240);
+    background-color: rgb(32, 8, 243);
     padding: 0%;
     margin: 20px;
     overflow: hidden;
 
 }
 
-.navbar a{
-    color: white;
+.navbar a{            /*styling the links (anchor) for each lists in the menu bar (navivation bar)*/
     text-decoration-line: none;
     padding: 15px;
     display: block;
     text-align: center;
-    color: rgb(6, 116, 79);
-    font-size: 25;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
 }
 
 .navbar li{
     float: left;
 }
 
-.navbar a:hover{
-    background-color: rgb(255, 255, 255);
+.navbar a:hover{             /*setting lists in the menu bar to change color when hover on*/
+    background-color: rgb(111, 111, 109);
 }
 
-body{
+body{             /*styling the body margin*/
     margin: 20px;
 }
-#farmer1 {
+#farmer1 {            /*specifically styling the image with id "farmer1"*/
+    float: right;
+}
+#Abay {            /*specifically styling the video with id "Abay"*/
     float: right;
 }
 
-/*lets style the registration form*/
-
-.form {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 0px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(59, 58, 58, 0.1);
-    font-family: Arial, sans-serif;
+/*styling the id = testimonisls list*/
+#testimonials {
+  list-style: none;         /* Removes default bullet points */
+  padding-left: 0;
 }
-label {
-    display: block;
-    margin-bottom: 5px;
+#testimonials ::before {      /* replaces default bullet points by emoji*/
+    content: "💡";
     margin-right: 10px;
+    margin-left: 35px;
+}
+
+/*here below styles the separate html file associated to the registration form*/
+/*I couldn't arrange the label and inputs side-by-side*/
+
+.RegisterForm {
+    display: block;
+}
+
+label {
+    width: 120px;
+    display: flex;
+    margin-bottom: 5px;
     margin-top: 10px;
-    font-weight: bold;
-    color: #050000;
+    font-weight: bolder;
+    color: black;
 }
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 25%;
-    padding: 1px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
+
+input {
+    flex: 1; /* input takes remaining space */
+    padding: 5px;
 }
-input:focus,
-textarea:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-textarea {
-    height: 100px;
-    
-}
+
 button {
     width: 100%;
     margin-top: 20px;
-    padding: 12px;
-    background: #71e8d4;
-    color: rgb(8, 0, 0);
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #012df1;
+    color: rgb(253, 252, 252);
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 25px;
     cursor: pointer;
 }
 button:hover {
-    background: #09ea01;
+    background: #23cce6;
 }
 
-/*FORM styling ended here*/
+/*the registration FORM styling ended here*/
 
+
+/*the following styling is applied on the separete "About" html page*/
+ul.Objectives {
+  list-style: none;         /* Removes default bullet points */
+  padding-left: 0;
+}
+.Objectives ::before {      /* replaces default bullet points by emoji*/
+    content: "⭐";
+    margin-right: 10px;
+    margin-left: 35px;
+}
+
+
+/* some styling for the footer we see at the end*/
 footer{
-    background-color: rgb(223, 190, 149);
-    border-style: inset;
-    font-family: monospace;
-    white-space: normal;
+    background-color: rgb(181, 192, 239);
+    color: black;
+    margin-top: 0;
 }
