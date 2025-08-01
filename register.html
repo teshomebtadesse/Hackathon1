@@ -11,7 +11,7 @@
         <body>
             <h1>Wellcome to GebereNet</h1>
             
-            <nav class="navbar">
+            <nav class="navbar"> <!--the menu bar remains common for all pages-->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -25,6 +25,7 @@
             
             <h2> This is the registration page</h2>
             <p>
+                Whether you're a farmer seeking new techniques, a researcher offering insights, or a partner with resources to share, GebereNet welcomes you. Sign up today to collaborate, connect, and contribute to a thriving agricultural community. Your expertise matters—let's build resilience and prosperity together.
                 Please provide the following information and hit <b>Register </b> button at the end
 
             </p>
@@ -33,19 +34,40 @@
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="name">Role:</label>
-                <input type="text" id="Role" name="Role">
 
-                <label for="phone">Phone</label>
-                <input type="number" id="phone" name="phone"><br>
+                <label for="name">Gender:</label>
+                <input type="radio" id="name" name="Gender">Male
+                <input type="radio" id="name" name="Gender">Female
+                <input type="radio" id="name" name="Gender">None
 
-                <p></p>
+                <label for="name">Education Level:</label>
+                <select name="Education Level" id="name">
+                    <option>--select--</option>
+                    <option>ED1</option>
+                    <option>ED2</option>
+                    <option>ED3</option>
+                    <option>ED4</option>
+                </select>
 
-                <label for="email"> Email</label>
+                <label for="name">Interests:</label>
+                <input type="checkbox" id="Interest1" name="Interest1">Interest1
+                <input type="checkbox" id="Interest2" name="Interest2">Interest2
+                <input type="checkbox" id="Interest3" name="Interest3">Interest3
+
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone" name="phone">
+
+                <label for="Date">Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="email"> Email:</label>
                 <input type="email" id="email" name="email">
 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password">
+
+                <label for="Photo">Upload your ID:</label>
+                <input type="file" id="photo" name="Photo">
 
                 <button type="submit"> Register</button>
 
