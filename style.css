@@ -19,7 +19,14 @@ h1{                             /*all first heading found everywhere will be att
     color: rgb(5, 26, 255);
     margin-top: 0%;
     margin-bottom: 0%;
-  
+    padding: 0%;
+}
+
+#motto{                        /*the motto of the website*/
+    text-align: center;
+    color: rgb(21, 91, 4);
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 .navbar ul{             /*styling the lists in the menu bar (navivation bar)*/
     list-style-type: none;
